@@ -6,36 +6,40 @@
 
 body {
   font: 13px Helvetica, Arial;
+  background-color: #FEFDEB;
+  overflow: hidden;
 }
 
-form {
-  background: #000;
+#signin {
+  /*background: #000;*/
+  position: absolute;
   padding: 3px;
+  width: 100%;
+  height: 30%;
+  top: 35%;
+}
+
+#username {
+  border: 0;
+  padding: 10px;
   width: 100%;
 }
 
-form input {
-  border: 0;
+#signInBtn {
+  /*background: rgb(130, 224, 255);*/
+  background: #AEF3B0;
   padding: 10px;
-  width: 85%;
-  margin-right: .5%;
-}
-
-form button {
-  width: 14%;
-  background: rgb(130, 224, 255);
-  border: none;
-  padding: 10px;
-}
-
-#m {
-  width: 70%;
+  position: absolute;
+  width: 20%;
+  margin-top: 1%;
+  left: 40%;
 }
 
 #bottomDivs {
   position: absolute;
   bottom: 0;
   width: 100%;
+  visibility: hidden;
 }
 
 #messageDiv {
@@ -43,13 +47,16 @@ form button {
   bottom: 0;*/
 }
 
-#signin {
-  top: 0;
+#username {
+  left: 10%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
 }
 
 p {
-  /*top: 100px;
-  color: red;*/
+  margin-top: 5px;
+  margin-left: 10px;
+  color: red;
   min-height: 1.25em;
   line-height: 1.25;
 }
@@ -58,6 +65,7 @@ p {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  visibility: hidden;
 }
 
 #messages li {
@@ -68,6 +76,34 @@ p {
   background: #eee;
 }
 
+#m {
+  margin-left: 1.5%;
+  width: 75%;
+  padding: 5px;
+}
+
 #sendBtn {
-  margin-right: .5%;
+  background: #AEF3B0;
+  padding: 5px;
+  width: 20%;
+}
+
+/* large devices */
+@media (min-width: 1200px){
+
+}
+
+/* medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* extra small devices */
+@media (max-width: 767px) {
+
 }

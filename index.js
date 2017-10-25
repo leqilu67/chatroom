@@ -10,6 +10,7 @@ app.get('/', function(req, res){
 
 // serve static files
 app.use('/css', express.static(path.join(__dirname + '/css')));
+app.use('/js', express.static(path.join(__dirname + '/js')));
 
 var clientCount = 0;
 var allClients = [];
